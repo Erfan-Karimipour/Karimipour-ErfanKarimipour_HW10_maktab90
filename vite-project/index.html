@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body dir="rtl">
+
+  <header class="flex h-12 m-auto my-2 border-0 border-b-2 border-b-gray-130 px-56 pb-2">
+
+    <section class="flex w-3/5 ">
+      <img src="Images/Divar.png" class=" h-8 mt-auto pl-3 border-l-2 m-0">
+      <button
+        class="w-44 rounded-sm hover:bg-gray-100 hover:text-black duration-300 align-middle text-sm text-gray-500 p-2 px-5 mr-2"><ion-icon
+          name="location-outline" class="align-middle "></ion-icon>
+        تهران
+      </button>
+      <button
+        class="w-44 rounded-sm hover:bg-gray-100 hover:text-black duration-300 align-middle text-sm text-gray-500 p-2 px-5 mr-2">
+        دسته ها
+        <ion-icon name="chevron-down-outline" class="align-middle mr-2"></ion-icon>
+      </button>
+
+      <input type="search" placeholder="جستوجو در همه آگهی ها"
+        class="w-full h-auto mr-2 bg-slate-100 text-gray-400 p-3 rounded-sm enabled:text-black enabled:outline-none">
+      </input>
+    </section>
+
+    <section class="flex mr-auto">
+      <button
+        class=" rounded-sm text-sm hover:bg-gray-100 hover:text-black duration-300 text-gray-500 p-2 px-5 align-middle"><ion-icon
+          name="person-outline" class="align-middle "></ion-icon> دیوار
+        من</button>
+      <button
+        class=" rounded-sm hover:bg-gray-100 hover:text-black duration-300 align-middle text-sm text-gray-500 p-2 px-5 "><ion-icon
+          name="chatbubble-outline" class="align-middle "></ion-icon>
+        چت</button>
+      <button
+        class="rounded-sm text-sm hover:bg-gray-100 hover:text-black duration-300 text-gray-500 p-2 px-5 ">پشتیبانی</button>
+      <button class="mr-2 bg-red-800 hover:bg-red-700 duration-300 text-white p-2 px-4 rounded-md font-bold ">ثبت
+        آگهی</button>
+    </section>
+
+
+  </header>
+
+
+  <main class="w-9/12 m-auto flex">
+    <div class="w-1/5 ml-6">
+      <section class=" grid gap-3 mt-10 pb-6 w-full">
+        <p class="text-sm text-gray-600">دسته ها</p>
+        <p class="text-gray-600 hover:text-gray-900 duration-300"><ion-icon name="home-outline"
+            class="align-middle"></ion-icon>
+          <button class="align-middle">املاک</button>
+        </p>
+
+        <p class="text-gray-600 hover:text-gray-900 duration-300"><ion-icon name="car-outline"
+            class="align-middle"></ion-icon>
+          <button class="align-middle">وسایل نقلیه</button>
+        </p>
+
+        <p class="text-gray-600 hover:text-gray-900 duration-300"><ion-icon name="phone-portrait-outline"
+            class="align-middle"></ion-icon>
+          <button class="align-middle">کالای دیجیتال</button>
+        </p>
+
+        <p class="text-gray-600 hover:text-gray-900 duration-300"><ion-icon name="flashlight-outline"
+            class="align-middle"></ion-icon>
+          <button class="align-middle">خانه و آشپزخانه</button>
+        </p>
+
+        <p class="text-gray-600 hover:text-gray-900 duration-300"><ion-icon name="brush-outline"
+            class="align-middle"></ion-icon>
+          <button class="align-middle">خدمات</button>
+        </p>
+
+        <p class="text-gray-600 hover:text-gray-900 duration-300"><ion-icon name="watch-outline"
+            class="align-middle"></ion-icon>
+          <button class="align-middle">وسایل شخصی</button>
+        </p>
+
+        <p class="text-gray-600 hover:text-gray-900 duration-300"><ion-icon name="game-controller-outline"
+            class="align-middle"></ion-icon>
+          <button class="align-middle">سرگرمی و فراغت</button>
+        </p>
+
+        <p class="text-gray-600 hover:text-gray-900 duration-300"><ion-icon name="people-outline"
+            class="align-middle"></ion-icon>
+          <button class="align-middle">اجتماعی</button>
+        </p>
+
+        <p class="text-gray-600 hover:text-gray-900 duration-300"><ion-icon name="mic-outline"
+            class="align-middle"></ion-icon>
+          <button class="align-middle">تجهیزات و صنعتی</button>
+        </p>
+
+        <p class="text-gray-600 hover:text-gray-900 duration-300"><ion-icon name="briefcase-outline"
+            class="align-middle"></ion-icon>
+          <button class="align-middle">استخدام و کاریابی</button>
+        </p>
+      </section>
+      <section class=" px-2  w-full">
+        <p class="py-4 px-2 border-y-2 cursor-pointer"><ion-icon name="chevron-down-outline"
+            class="align-middle text-gray-500"></ion-icon> محل</p>
+        <p class="py-4 px-2 border-b-2 cursor-pointer"><ion-icon name="chevron-down-outline"
+            class="align-middle text-gray-500"></ion-icon> قیمت</p>
+        <p class="py-4 px-2 border-b-2 cursor-pointer"><ion-icon name="chevron-down-outline"
+            class="align-middle text-gray-500"></ion-icon> وضعیت آگهی</p>
+      </section>
+      <section class="px-2  w-full">
+        <div class="grid grid-rows-2 grid-cols-3 gap-4 p-5 text-sm">
+          <p class="text-gray-500 hover:text-gray-800 duration-300 cursor-pointer"> دربارهٔ دیوار</p>
+          <p class="text-gray-500 hover:text-gray-800 duration-300 cursor-pointer"> دریافت برنامه</p>
+          <p class="text-gray-500 hover:text-gray-800 duration-300 cursor-pointer"> بلاگ دیوار</p>
+          <p class="text-gray-500 hover:text-gray-800 duration-300 cursor-pointer"> کسب‌وکارها</p>
+          <p class="text-gray-500 hover:text-gray-800 duration-300 cursor-pointer"> پشتیبانی و قوانین</p>
+        </div>
+        <div class="w-3/4 m-auto text-lg text-gray-500 text-center grid grid-cols-4">
+          <ion-icon name="logo-twitter" class="cursor-pointer hover:text-black duration-150"></ion-icon>
+          <ion-icon name="logo-instagram" class="cursor-pointer hover:text-black duration-150"></ion-icon>
+          <ion-icon name="logo-linkedin" class="cursor-pointer hover:text-black duration-150"></ion-icon>
+          <ion-icon name="logo-google-playstore" class="cursor-pointer hover:text-black duration-150"></ion-icon>
+        </div>
+        <div class="grid grid-cols-3 mt-10 cursor-pointer">
+          <a href="https://enamad.ir" target="_blank"><img src="Images/e-namad.png"></a>
+          <a href="https://ecunion.ir" target="_blank"><img src="Images/ettehadiyye.png"></a>
+          <a href="https://logo.samandehi.ir" target="_blank"><img src="Images/rezayat.png"></a>
+        </div>
+      </section>
+    </div>
+    <div>
+      <p class="text-gray-500">
+        دیوار تهران: انواع آگهی ها و خدمات در تهران
+      </p>
+      <section class="grid grid-cols-3 gap-4">
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+        <div class="border border-gray-200 p-3 flex w-full h-full rounded-md cursor-pointer">
+          <p class="justify-start w-56">
+            <span class="text-xl"> محصول برتر جامعه
+            </span> <br><br><br>در حد نو<br>200000 تومان<br>لحظاتی پیش در جهنم
+          </p>
+          <img src="Images/laptop.jpg" class="justify-end w-44 rounded-md">
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+  <div id="app"></div>
+  <!-- <script type="module" src="/main.js"></script> -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
